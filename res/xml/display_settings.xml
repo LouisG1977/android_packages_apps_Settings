@@ -168,13 +168,6 @@
         android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
 
-    <com.android.settings.display.FontDialogPreference
-        android:key="custom_font"
-		android:layout="@layout/cherish_preference_middle_card"
-		android:icon="@drawable/ic_font"
-        android:title="@string/font_picker_title"
-        android:persistent="false" />
-
     <Preference
         android:key="font_size"
 		android:layout="@layout/cherish_preference_middle_card"
@@ -295,6 +288,11 @@
 			 android:icon="@drawable/ic_wifi"
 			 android:layout="@layout/cherish_preference_middle_card"
             android:title="@string/custom_wifi_bar_title" />
+
+        <ListPreference
+            android:key="android.theme.customization.font"
+            android:icon="@drawable/ic_font"
+            android:title="@string/theme_customization_font_title"/>
         <ListPreference
             android:key="android.theme.customization.adaptive_icon_shape"
 			android:layout="@layout/cherish_preference_middle_card"
